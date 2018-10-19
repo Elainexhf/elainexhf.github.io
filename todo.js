@@ -1,8 +1,8 @@
-var mkList = function (task, dueDate, urgency) {
+var mkList = function (taskName, dueDate, priority) {
 //create <li><li>
 var liElem = document.createElement ('li')
 // <li> a task - due date </li>
-liElem.textContent = `${task} - ${dueDate}`;
+liElem.textContent = `${taskName} - ${dueDate}`;
 //<li class = "list-group-item"> a task - due date </li>
 liElem.classList.add('list-group-item');
 return (liElem);
@@ -19,16 +19,16 @@ addBtn.addEventListener(
         //console.log('button clicked')
             var taskElem = document.querySelector('#task');
             var dueDateElem= document.querySelector('#due-date');
-            var urgencyElem = document.querySelector('#urgency');
+            var priorityElem = document.querySelector('#priority');
             //console.log('task: ', taskElem.value)
             //console.log('due-date: ', duedateElem.value)
-            //console.log('urgency: ', urgencyElem.value)
-            var todoElem = mkList(taskElem.nodeValue, dueDateElem.nodeValue, urgencyElem.nodeValue)
+            //console.log('priority: ', priorityElem.value)
+            var todoElem = mkList(taskElem.nodeValue, dueDateElem.nodeValue, priorityElem.nodeValue)
             var todoListElem = document.querySelector('#to-do-list');
             todoListElem.appendChild(todoElem);
-            taskElem.value = null;
-            dueDate.Elem = null;
-            urgencyElem = null ;
+            //taskElem.value = null;
+            //dueDateElem.value = null;
+            //priorityElem.value = null ;
         }
 
 
