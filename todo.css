@@ -1,0 +1,27 @@
+.container {
+    margin-top: 30px;
+
+}
+
+.grin {
+    margin-top: 10px;
+    margin-left:150px;
+}
+
+
+.form-group{
+    margin-top: 10px;
+    margin-left: 150px;
+
+}
+
+.btn-group{
+    margin-right: 50px;
+
+}
+
+.right-justify {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+} 

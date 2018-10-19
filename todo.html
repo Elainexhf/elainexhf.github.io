@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>To Do</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="todo.css">
+
+
+</head>
+<body>
+
+        <div class="container">
+                <h1>My Awesome Bootstrap To-Do List</h1>
+
+                <i class="fas fa-list-ol"style="font-size:200px;color:red;"></i>
+                <i class="fas fa-list-ol"style="font-size:150px;color:orange"></i>
+                <i class="fas fa-list-ol"style="font-size:100px;color:yellow;"></i>
+                <i class="fas fa-list-ol"style="font-size:50px;color:green;"></i>
+                <i class="fas fa-list-ol"style="font-size:25px;color:blue;"></i>
+                <i class="fas fa-list-ol"style="font-size:12px;color:purple;"></i>
+        </div>
+       
+        <div class="grin">
+
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+                <i class="fas fa-grin-stars fa-spin"style=font-size:30px></i>
+            
+              </div>
+
+              <form>
+                    <div class="form-group">
+                            <label for="task">Task</label>
+                            <input type="text" id="task" class="form-control" placeholder="Task name">
+                            <small class="form-text text-muted">Please enter your task name</small>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="due-date">Due</label>
+                                <input type="date" id="due-date" class="form-control" placeholder="Due date">
+                                <small class="form-text text-muted">When is this task due?</small>
+                            </div>
+
+                    <div class="form-group">
+                            <label for="priority">Priority</label>
+                             <select id="priority" class="form-control">
+                                <option value="high">High</option>
+                                <option value="medium" selected >Medium</option>  
+                                <option value="low">Low</option>
+                            </select>
+                             <small class="form-text text-muted">Level of Priority</small>
+                        </div>
+
+
+
+
+                          <div class="btn-group right-justify">
+                                <button type="reset" class="btn btn-lg btn-warning">
+                                    <i class="fas fa-eraser"></i>
+                                    Reset
+                                </button>
+
+                                <button type="button" id="addBtn" class="btn btn-lg btn-success">
+                                    <i class="fas fa-plus-circle"></i>
+                                    Add Task
+                                </button>
+                            </div>
+
+
+                        </form>
+
+                        <div class="list-group" id="todo-list">
+                       </div>
+
+                       
+                    </div>
+
+             
+
+</body>
+
+<script src="todo.js"></script>
+
+</html>

@@ -1,0 +1,54 @@
+#name-field{
+    border-radius:30px;
+    color:blue;
+    font-family: monospace;
+
+}
+
+li{
+    display:inline;
+}
+
+.important{
+    color:red;
+    font-weight:bold;
+    text-decoration-line: bold;
+}
+
+.news-title{
+    font-size:1.5em;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    border-top-left-radius: 15 px;
+    border-top-right-radius: 15 px;
+
+}
+
+.news-content{
+    font-size:0.9em;
+    font-family: 'Courier New', Courier, monospace
+    border-left: 1px solid black;
+    padding:15px;
+
+}
+
+.thumbnail{
+    width:64;
+    height:64;
+    border-radius:32px;
+    margin: 20px;
+
+}
+h1{
+    color:pink;
+    border: 1px azure green;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 6em;
+}
+
+p{
+    font-size:1.2em;
+    border:3px dotted orange
+    
+}
